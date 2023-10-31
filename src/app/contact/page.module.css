@@ -1,0 +1,90 @@
+.form {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+    background-color: #bbbbbb8a;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 30px 30px -30px rgba(27, 26, 26, 0.315);
+  }
+  
+  .form .title {
+    color:white;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .form input {
+    outline: 0;
+    border: 1px solid rgb(219, 213, 213);
+    padding: 8px 14px;
+    border-radius: 8px;
+    width: 100%;
+    height: 50px;
+  }
+  
+  .form textarea {
+    border-radius: 8px;
+    height: 100px;
+    width: 100%;
+    resize: none;
+    outline: 0;
+    padding: 8px 14px;
+    border: 1px solid rgb(219, 213, 213);
+  }
+  
+  .form button {
+    align-self: flex-end;
+    padding: 8px;
+    outline: 0;
+    border: 0;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color:white;
+    color: black;
+    cursor: pointer;
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .heroForm{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+ 
+
+  }
+  .form{
+    width: 500px;
+  }
+
+  .img{
+    width: 100%;
+    object-fit: contain;
+    filter:grayscale(70%);
+    animation:hero 4s alternate infinite;
+    
+  }
+  @keyframes hero {
+    from{
+        transform: scale(0.7) translateX(0);
+    }
+    to{
+      transform: scale(1.2) translateX(5%);
+    }
+  }
+  
+      

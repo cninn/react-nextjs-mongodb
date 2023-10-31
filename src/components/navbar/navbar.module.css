@@ -1,0 +1,52 @@
+.container{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-weight: bold;
+    font-size: 34px;
+    
+}
+
+
+
+
+
+
+
+.links{
+    display: flex;
+    align-items: center;
+    gap:10px;
+
+}
+.link{
+    background-color: #bbbbbb33;
+    padding: 5px 25px;
+    border-radius: 3px;
+}
+.link:hover{
+    background-color: #bbb;
+    transform: scale(1.1);
+    transition: all 0.4s;
+    color: black;
+    border-radius: 15px;
+}
+
+.logout{
+    padding: 5px;
+    border: none;
+    background-color: #53c28b;
+    color:white;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.logout:hover{
+    background-color: white;
+    transform: scale(1.1);
+    color:#53c28b;
+    transition: all 0.4s;
+}

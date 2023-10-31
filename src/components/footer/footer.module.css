@@ -1,0 +1,26 @@
+.container{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.icons{
+    display: flex;
+    gap: 10px;
+}
+.icon{
+    background-color: #bbbbbb33;
+    padding: 5px;
+    border-radius: 5px;
+}
+.icon:hover{
+    background-color: #bbb;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+.cmc{
+    font-size: 24px;
+    font-weight: bold;
+    
+}

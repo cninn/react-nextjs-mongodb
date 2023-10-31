@@ -1,0 +1,33 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+}
+.portText{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.portContainer{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    
+}
+.port{
+    width: 250px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 15px;
+  
+}
+.port:hover{
+    transform: scale(1.2) rotate(15deg) translateY(-40px);
+    opacity: 0.7;
+    transition: all 0.5s;
+    cursor: pointer;
+    border: 2px solid #bbb;
+  
+}
