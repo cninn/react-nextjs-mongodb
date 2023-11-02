@@ -11,10 +11,26 @@ html,body{
 
 
 }
+
+.theme{
+  transition: 1s all;
+}
+
+.light{
+    background-color: white!important;
+    color:#111!important;
+}
+.dark{
+  background-color: black!important;
+  color:#bbb;
+}
+
 a{
   text-decoration: none;
   color:inherit;
 }
+
+
 .container{
   max-width: 1366px;
   min-height: 100vh;
