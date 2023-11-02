@@ -3,22 +3,31 @@ import React from "react";
 import styles from "./page.module.css";
 import user from 'public/webdev2.jpeg'
 import dev from 'public/webdev1.jpeg'
+import { notFound } from "next/navigation";
+
+async function getData(id){
+  const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`,{
+    next:{revalidate:10}
+  })
+
+  if(!res.ok){
+   return notFound()
+  }
+  return res.json();
+}
 
 
-const BlogPost = () => {
+const BlogPost = async ({params}) => {
+  const data = await getData(params.id);
   return (
     <div className={styles.container}>
       <div className={styles.post}>
         <div className={styles.desc}>
           <h2>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Necessitatibus nostrum delectus quo veritatis enim quos!
+            {data.title}
           </h2>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi
-            necessitatibus blanditiis rerum debitis. Veritatis hic, recusandae
-            beatae, vitae harum ea doloremque corrupti quo a, atque tempore
-            modi. Ab, tenetur facilis!
+          {data.body}
           </p>
           <Image src={user} className={styles.userimg} alt="..." />
         </div>
